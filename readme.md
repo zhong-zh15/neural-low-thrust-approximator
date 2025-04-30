@@ -1,4 +1,4 @@
-# NLTA: Neural Low‑Thrust Approximator
+# NLTA: Neural Low‑Thrust Trajectory Approximator
 ![C++](https://img.shields.io/badge/C++-supported-brightgreen) 
 ![Python](https://img.shields.io/badge/Python-supported-brightgreen) 
 ![MATLAB](https://img.shields.io/badge/MATLAB-supported-brightgreen)
