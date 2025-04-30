@@ -1,6 +1,6 @@
-
 from pathlib import Path
 from ptorch_nn_lowthrust import fast_predict_vector_raw_data, ptorch_model_read
+
 if __name__ == "__main__":
 
     # ---------------- input ---------------------------------------------------
@@ -30,7 +30,7 @@ if __name__ == "__main__":
     input_vec = rv0 + rvt + [dt, m0, Tmax, Isp, mu]
 
     # ---------------- 1. Δv prediction -------------------------------------------------
-    dv_model_dir = Path("../src/libtorch_nn_lowthrust/libtorch_model_dv")
+    dv_model_dir = Path("../../../models/libtorch_model_dv")
     X_mean, X_scale, Y_mean, Y_scale, module = ptorch_model_read(dv_model_dir)
 
     pred_v = fast_predict_vector_raw_data(
@@ -42,7 +42,7 @@ if __name__ == "__main__":
     )
 
     # ---------------- 2. tmin prediction --------------------------------------------
-    tmin_model_dir = Path("../src/libtorch_nn_lowthrust/libtorch_model_tmin")
+    tmin_model_dir = Path("../../../models/libtorch_model_tmin")
     X_mean, X_scale, Y_mean, Y_scale, module = ptorch_model_read(tmin_model_dir)
     pred_t = fast_predict_vector_raw_data(
         [input_vec], X_mean, X_scale, Y_mean, Y_scale, module, mode=2
