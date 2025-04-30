@@ -94,9 +94,8 @@ def nn_input_1_rotate_lambert(x_raw: List[float]) -> List[float]:
         raise RuntimeError("Lambert solver failed")
 
     # Δv
-    dv0_vec = dv0 - rv0NU[3:]
-    dvt_vec = dvt - rvtNU[3:]
-
+    dv0_vec = rv0NU[3:] - dv0
+    dvt_vec = rvtNU[3:] - dvt
     # 真实近点角
     rv_dep = np.concatenate((rv0NU[:3], dv0))
     f = f_true(rv_dep, mu)
