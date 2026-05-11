@@ -1,4 +1,5 @@
-# NLTA: Neural Low‑Thrust Trajectory Approximator
+# Pretrained Approximators for Low-Thrust Trajectory Cost and Reachability
+
 ![C++](https://img.shields.io/badge/C++-supported-brightgreen) 
 ![Python](https://img.shields.io/badge/Python-supported-brightgreen) 
 ![MATLAB](https://img.shields.io/badge/MATLAB-supported-brightgreen)
@@ -76,12 +77,7 @@ All inputs are non‑dimensionalised. The initial acceleration reference is calc
 If you like this work, please cite:
 
 ```
-@article{zhongzhang2025lowthrust,
-  title   = {Pretrained Neural Approximators for Low-Thrust Trajectory Transfer Cost and Reachability},
-  author  = {Zhong Zhang et al.},
-  journal = {Journal of Guidance Dynamics and Control},
-  year    = 2025
-}
+Zhang, Z., Acciarini, G., Izzo, D., Baoyin, H., & Topputo, F. (2026). Pretrained Approximators for Low-Thrust Trajectory Cost and Reachability. To appear in Journal of Guidance, Control and Dynamics
 ```
 
 If you have any questions, please contact:
